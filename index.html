@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>emski creation</title>
+     
+</head>
+<body>
+  
+ <div>
+   <nav class="navbar navbar-expand-md bg-dark text-light p-3 navbar-dark ">
+      <div class="container">
+            <a class="navbar-brand" href="#">
+          <h3>EMMY</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto mt-lg-4">
+          
+              <div class="d-flex justify-content-between  mb-3">
+                <div class="p-2 bg-info">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" data-bs-target="#joinus" href="#joinus">JOIN US</a>
+                  </li>
+                </div>
+                <div class="p-2 bg-warning ">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#questions">QUESTIONS</a>
+                  </li>
+                </div>
+                <div class="p-2 bg-primary">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#services">SERVICES</a>
+                  </li>
+                </div>
+             </div>
+          </ul>
+        </div>
+      </div>
+   </nav>
+      <div class="container-fluid bg-primary p-3 ps-4">
+        <h2>Become an <span class="text-warning">Affiliate markerter</span></h2>
+        <p>we focus on teaching new members the fundamentals of the latest and greatest technologies in other to prepare for thier affiliate marketing career</p>
+      
+         <button type="button" id="joinus" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#myModal">
+           join us now
+         </button>
+    
+    
+        <!-- The Modal -->
+        <div class="modal justify-content-between align-items-start" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+    
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title align-items-center">FILL OUT THE FORM TO JOIN US</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+    
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="container">
+                  <form action="process.php">
+                   <div class="d-block">  
+                     <div>
+                       <label for="firstname">First Name:</label>
+                       <input type="text" name="firstname" placeholder="enter first name" required>
+                     </div>
+                     <div>
+                       <label for="lastname" class="mt-3">Last Name:</label>
+                       <input type="text" name="firstname" placeholder="enter last name" required>
+                     </div>
+                     <div>
+                       <label for="email" class="mt-3">email:</label>
+                       <input type="email" name="email" placeholder="enter your email" required>
+                     </div>
+                     <div class="mt-3 ">
+                      <label> password: </label>
+                      <input class="password" type="password" placeholder="password" required>
+                     </div> 
+                    <div class=" "> 
+                      <input type="submit" class="btn btn-primary text-dark mt-3" value="sign up">
+                    </div> 
+                   </div>    
+                  </form>
+                </div>
+              </div>    
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">back</button>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="services" class="h2 m-3 p-5 bg-secondary text-center text-danger">
+       <mark>  CHOOSE A MARKETING PLAN THAT SUITES YOU</mark> 
+    </div>
+     
+
+     <section class="p-4">
+       <div class="container">
+         <div class="row text-center g-5">
+           <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h-1 mb-3">
+                <h3 class="card-title mb-3">
+                  Diamond package
+                </h3>  
+                <p class="card-text ">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore porro quibusdam distinctio commodi beatae.
+                </p> 
+                <a href="#" class="btn btn-primary h-6">CHOOSE PACKAGE</a>
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-md">
+            <div class="card bg-secondary text-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                 <h3 class="card-title mb-3">
+                   Silver package
+                 </h3>  
+                 <p class="card-text">
+                   <h6>lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore porro quibusdam distinctio commodi beatae.</h6>
+                 </p> 
+                 <a href="#" class="btn btn-primary h-6">CHOOSE PACKAGE</a>
+                </div>
+              </div>
+            </div>
+           </div><div class="col-md">
+            <div class="card bg-info text-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                <h3 class="card-title mb-3">
+                  Bronze package
+                </h3>  
+                <p class="card-text ">
+                 <h6> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque tempore porro quibusdam distinctio commodi beatae.</h6>
+                </p> 
+                <a href="#" class="btn btn-primary h-6">CHOOSE PACKAGE</a>
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+      </section>
+    <div id="questions" class="container">  
+      <div class="h3 text-center m-3">
+            Frequently asked questions
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             Can i earn money through affilliate marketing
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body text-secondary">
+              Affiliate marketing is an advertising model in which company pays other (eg, bloggers)To advertise their goods and services and generate sales.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What is an example of affiliate marketing?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body text-secondary">
+              eBay, The home depoy,Amazon and other well known commerces have affiliate programs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              is affiliate marketing easy?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body mb-5 text-secondary">
+              It is definitely the easiest path to take, building enough traffic to generate meaningful income.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <section class="p-5 bg-primary">
+       <div class="container ">
+         <h2 class="text-center text-white">Our instructors</h2>
+         <p class="lead text-center text-white mb-5">
+           our instructors all have 5+ years working as a marketer in the industry
+         </p>
+         <div class="row g-5 justify-content-center" >
+            <div id="card" class="col-md-6 col-lg-3 bg-light ">
+            <img class="card mx-auto mt-3 rounded-circle" src="../images/IMG20220406145545.jpg" style="width: 50%;"
+            alt="Card image">
+           <div class="card-body">
+             <h4 class="card-title text-info text-center">OZIOMA OSONDU</h4>
+             <p class="card-text text-light">The REGISTRAR OF EMSKI AFFILIATE MARKETING COMPANY
+             <a href="#"  style="border: 1px solid red; background-color: black;" class="btn btn-danger mx-auto">Contact REGISTRAR</a>
+            </div>
+           </div>
+           <div id="card" class="col-md-6 col-lg-3 bg-light ms-5 me-5 ">
+            <img class="card mx-auto mt-3 rounded-circle" src="../images/IMG_20210110_130727_651.jpg" style="width: 50%;"
+            alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title text-info text-center">ANDREW EMMANUEL</h4>
+              <p class="card-text text-light">The CEO and founder of EMSKI AFFILIATE MARKETING COMPANY
+              <a href="#"  style="border: 1px solid red; background-color: black;" class="btn btn-danger mx-auto">Contact the CEO</a>
+            </div>
+           </div>
+            <br>
+           <div id="card" class="col-md-6 col-lg-3 bg-light  ">
+            <img class="card mx-auto mt-3 rounded-circle" src="../images/IMG_20210506_222504_963.jpg" style="width: 50%;"
+            alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title text-info text-center">ANDREW EMMANUEL</h4>
+              <p class="card-text text-light">The CEO and founder of EMSKI AFFILIATE MARKETING COMPANY
+              <a href="#" style="border: 1px solid red; background-color: black;" class="btn btn-danger mx-auto">Contact the CEO</a>
+            </div>
+           </div>
+         </div>
+       </div>
+       <div  style="border: 1px solid red; background-color: black;" class="text-center text-light m-4 h4">
+         About the CEO <span> <button><a href="#" class="btn btn-info text-dark btn-large">Read more</a></button>
+         </span>
+       </div>
+    </section>
+    <div class="p-5  bg-danger container-fluid">
+
+    </div>
+    <div class="p-5  bg-success container-fluid">
+
+    </div>
+    <div class="bg-warning p-5 container-fluid">
+
+    </div>
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

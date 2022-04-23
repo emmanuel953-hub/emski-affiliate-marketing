@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-repeat:no-repeat ;
+    background-size:1300px;
+}
+.container-fluid{
+    border-bottom:5px solid red;
+}
+label{
+    display: block;
+}
+#card{
+  background-image: url(../images/sigmund-By-tZImt0Ms-unsplash.jpg) !important;
+}
+emski{
+    color: blue;
+}
+#brand{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
